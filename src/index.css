@@ -1,13 +1,149 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body{
+  background-color: aliceblue;
+  width: 100%;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.heading{
+  font-size: 2.5rem;
+  margin-top: 40px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.hr{
+  border: 3px solid rgb(73, 167, 255);
+  width: 100px;
+  border-radius: 2px;
+}
+
+.section{
+  width: 100%;
+  /* height: 100vh; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 600px;
+  /* height: 75vh; */
+  background-color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.182);
+  margin-bottom: 40px;
+  transition: .5s;
+}
+
+@media screen and (max-width : 650px) {
+    .container{
+      width: 500px;
+    }
+}
+
+@media screen and (max-width : 500px) {
+  .container{
+    width: 400px;
+  }
+}
+
+.container:hover{
+  box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.244);
+
+}
+
+.imageholder{
+  /* height: 50vh; */
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.descriptionarea{
+  width: 100%;
+  /* height: 40%; */
+  box-sizing: border-box;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.description{
+  width: 100%;
+  height: 100%;
+}
+
+button{
+  margin-top: 30px;
+  background-color:transparent;
+  border: 1px solid rgb(170, 39, 39);
+  outline: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: rgb(170, 39, 39);
+}
+
+.namepriceholder{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name{
+  font-weight: 600;
+  color: black;
+}
+
+.price{
+  background-color: rgb(197, 216, 255);
+  color: rgb(0, 121, 197);
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.info{
+  color: grey;
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+.refresh{
+  background-color: rgb(73, 167, 255);
+  border: 0px ;
+  color: white;
+  padding: 7px 30px;
+  font-weight: 600;
+}
+
+span {
+  color: rgb(73, 167, 255);
+}
+
+span:hover{
+  cursor: pointer;
+  color: rgb(50, 154, 250)
 }
